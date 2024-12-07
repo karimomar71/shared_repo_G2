@@ -8,5 +8,11 @@ pipeline {
                 sh './mvnw clean package'
             }
         }
+        stage('Test') {
+            steps {
+                echo 'Test the application...'
+                sh './mvnw test'
+            }
+        }
     }
 }
