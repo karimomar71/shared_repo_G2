@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building the application...'
+                echo '$USER_NAME'
                 sh './mvnw clean package'
             }
         }
